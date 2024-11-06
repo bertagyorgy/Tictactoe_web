@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a); /* Finom színátmenet */
+}
+
+#drawingCanvas {
+    border: 4px solid #ff6600; /* Narancssárga szegély */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    background-color: #333333; /* Sötétszürke játéktér */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #444; /* Sötét modal háttér */
+    color: #fff; /* Fehér szöveg */
+    padding: 20px;
+    border: 4px solid #ff6600; /* Narancssárga szegély */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    /*z-index: 10;*/
+}
+
+.modal-content {
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #00ff00; /* Élénk zöld gomb */
+    border: none;
+    border-radius: 5px;
+    font-style: bold;
+    color: #000; /* Fekete szöveg */
+}
