@@ -69,6 +69,13 @@ body {
     background-color: #ff6600;
     color: #000;
 }
+#play{
+    background-color: #ff6600;
+    color: #000;
+}
+#play:hover{
+    background-color: #ff8822;
+}
 
 .submenu {
     display: none;
