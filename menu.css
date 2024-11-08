@@ -69,11 +69,11 @@ body {
     background-color: #ff6600;
     color: #000;
 }
-#play{
+#playbtn{
     background-color: #ff6600;
     color: #000;
 }
-#play:hover{
+#playbtn:hover{
     background-color: #ff8822;
 }
 
