@@ -23,7 +23,7 @@ body {
     text-align: center;
     color: #f0f0f0;
     background: rgba(0, 0, 0, 0.7); /* Fekete, enyhén áttetsző háttér a szöveg alatt */
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
 }
 
@@ -53,7 +53,7 @@ body {
     display: block;
     width: 200px;
     padding: 10px;
-    margin: 10px auto;
+    margin: 15px auto;
     background-color: #444;
     border: 2px solid #ff6600; /* Narancssárga gomb szegély */
     color: #fff;
