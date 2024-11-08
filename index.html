@@ -1,19 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amőba Játék - Canvas Rajzolás</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Végtelen Amőba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-    <canvas id="drawingCanvas" width="600" height="600"></canvas>
-    <div id="winnerModal" class="modal">
-        <div class="modal-content">
-            <span id="winnerText"></span><br>
-            <button onclick="closeModal()">Új játék</button>
+    <div class="menu-container">
+        <h1 class="title">Infinity Grid</h1>
+        <div class="menu-buttons">
+            <button onclick="openMenu('play')">Játék</button>
+            <button onclick="openMenu('gamemodes')">Játékmódok</button>
+            <button onclick="openMenu('settings')">Beállítások</button>
+        </div>
+
+        <!-- Almenük -->
+        <div id="play" class="submenu">
+            <button onclick="window.location.href='game-easy.html'">Könnyű</button>
+            <button onclick="window.location.href='game-medium.html'">Közepes</button>
+            <button onclick="window.location.href='game-hard.html'">Nehéz</button>
+            <button onclick="closeMenu()">Vissza</button>
+        </div>
+
+        <div id="gamemodes" class="submenu">
+            <button onclick="window.location.href='game.html'">Kétjátékos mód</button>
+            <button onclick="window.location.href='chaos.html'">Káosz mód</button>
+            <button onclick="closeMenu()">Vissza</button>
+        </div>
+
+        <div id="settings" class="submenu">
+            <p>Settings opciók (pl. hang, fényerő stb.)</p>
+            <button onclick="closeMenu()">Vissza</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
