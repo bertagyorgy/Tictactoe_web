@@ -1,0 +1,75 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://assets.onecompiler.app/42xc3y4tx/42xhkz5jk/night_sky2.jpg') no-repeat center center fixed;
+    background-size: cover; /* A kép arányainak megőrzése, teljes képernyőn */
+    font-family: Arial, sans-serif;
+}
+.menu-container, .modal-content {
+    font-family: 'Roboto', sans-serif;
+    /* Alkalmazzuk minden címre és gombra is */
+}
+.menu-container {
+    text-align: center;
+    color: #f0f0f0;
+    background: rgba(0, 0, 0, 0.7); /* Fekete, enyhén áttetsző háttér a szöveg alatt */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 4em;
+    color: #ff6600; /* Narancssárga cím */
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(255, 102, 0, 0.7);
+    animation: pulse 2s infinite; /* Pulzáló animáció */
+}
+
+/* Pulzáló animáció a címhez */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(0.7);
+        color: #ff6600;
+    }
+    50% {
+        transform: scale(0.8);
+        color: #ffcc00;
+    }
+}
+
+
+.menu-buttons button,
+.submenu button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #444;
+    border: 2px solid #ff6600; /* Narancssárga gomb szegély */
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(255, 102, 0, 0.5); /* Világító hatás */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu-buttons button:hover,
+.submenu button:hover {
+    background-color: #ff6600;
+    color: #000;
+}
+
+.submenu {
+    display: none;
+}
